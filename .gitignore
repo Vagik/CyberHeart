@@ -1,0 +1,14 @@
+/CyberHeart.VC.db
+/CyberHeart.sln
+/.vs
+/x64
+/CyberHeart/*
+!/CyberHeart/typedefs.h
+!/CyberHeart/CyberHeart.cpp
+!/CyberHeart/CyberHeart.h
+!/CyberHeart/CyberHeart.ui
+!/CyberHeart/main.cpp
+!/CyberHeart/MyViewer.cpp
+!/CyberHeart/MyViewer.h
+!/CyberHeart/ParseSTL.h
+!/CyberHeart/Triangle.h
