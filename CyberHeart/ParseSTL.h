@@ -32,13 +32,14 @@ Point_3 find_normal(string line) {
 
 Point_3 find_vertex(string line) {
     line += '\n';
+    string vertex = "vertex";
     size_t pos = line.find("vertex");
     if (pos != string::npos) {
         int fin_pos = 0;
-        float point_x = atof(copyWord(line, pos + 8, &fin_pos).c_str());
+        float point_x = atof(copyWord(line, pos + vertex.length() + 1, &fin_pos).c_str());
         float point_y = atof(copyWord(line, fin_pos + 1, &fin_pos).c_str());
         float point_z = atof(copyWord(line, fin_pos + 1, &fin_pos).c_str());
-        return Point_3(point_x, point_y, point_z);
+        return Point_3(0.2 * point_x, 0.2 * point_y, 0.2 * point_z);
     }
     else
         return Point_3(1000,0,0);

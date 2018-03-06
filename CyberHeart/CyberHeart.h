@@ -11,8 +11,13 @@ class CyberHeart : public QMainWindow
 public:
     CyberHeart(QWidget *parent = Q_NULLPTR);
 public slots:
-    void drawHeart();
-    void ParseSTL();
+    void drawTriangles();
+    void drawTetrahedra();
+
+    void parseSTL();
+    void constructTetrahedra();
+
+    void drawCoordinates();
 private:
     Ui::CyberHeartClass ui;
 };
